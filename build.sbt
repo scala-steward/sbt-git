@@ -12,8 +12,7 @@ lazy val scala3 = "3.8.4"
 
 crossScalaVersions := Seq(scala212, scala3)
 
-enablePlugins(GitVersioning, SbtPlugin)
-git.baseVersion := "1.0"
+enablePlugins(SbtPlugin)
 
 libraryDependencies ++= Seq(
   "org.eclipse.jgit" % "org.eclipse.jgit" % "5.13.5.202508271544-r",
